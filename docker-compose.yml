@@ -1,0 +1,8 @@
+services:
+  apache:
+    build: .
+    container_name: apache-compose-christopher
+    ports:
+      - "8082:80"
+    volumes:
+      - ./web:/var/www/html
